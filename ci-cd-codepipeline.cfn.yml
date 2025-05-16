@@ -8,7 +8,7 @@ Parameters:
 
   EksClusterName:
     Type: String
-    Description: TODO - The name of the EKS cluster created
+    Description: The name of the EKS cluster created
     Default: eksctl-demo
     MinLength: 1
     MaxLength: 100
@@ -16,7 +16,7 @@ Parameters:
 
   GitSourceRepo:
     Type: String
-    Description: TODO - GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
+    Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
     Default: cd0157_Final_Pipeline
     MinLength: 1
     MaxLength: 100
@@ -25,7 +25,7 @@ Parameters:
   GitBranch:
     Type: String
     Default: main
-    Description: TODO - GitHub git repository branch - change triggers a new build
+    Description: GitHub git repository branch - change triggers a new build
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository branch name
@@ -33,15 +33,15 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: TODO - GitHub API token - see https://github.com/blog/1509-personal-api-tokens
+    Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
 
   GitHubUser:
     Type: String
-    Default: SudKul
-    Description: TODO - GitHub username or organization
+    Default: steff32
+    Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub username or organization
